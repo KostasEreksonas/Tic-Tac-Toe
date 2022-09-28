@@ -217,9 +217,12 @@ int main() {
 			choice(player1, num);
 			board();
 
+			// When checkWin() returns true, break the program
 			if (win != checkWin()) {
 				break;
 			}
+
+			// When checkTie() returns true, break the program
 			if (tie != checkTie()) {
 				break;
 			}
