@@ -10,6 +10,6 @@ Table of Contents
 Compile the source code with `g++` and run the output file with `./`.
 
 ```
-g++ tictactoe.cpp -o tictactoe
+g++ tictactoe.cpp functions.h -o tictactoe
 ./tictactoe
 ```
