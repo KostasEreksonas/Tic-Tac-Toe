@@ -14,6 +14,9 @@ int main() {
 	// Initialize a variable to store a number of the chosen space
 	int num;
 
+	// Display welcome message
+	welcomeMsg();
+
 	while (win != true || tie != true) {
 
 		if (counter % 2 == 0) {

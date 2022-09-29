@@ -10,6 +10,13 @@ bool occupied[3][3]={{false, false, false}, {false, false, false}, {false, false
 // Alternate between player 1 and player 2
 int counter = 0;
 
+void welcomeMsg() {
+
+	std::cout << "Welcome to Tic-Tac-Toe game!\n";
+	board();
+
+}
+
 void board() {
 
     std::cout << "    |    |    \n";
