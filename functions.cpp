@@ -134,11 +134,25 @@ void choice(char player, int space) {
 }
 
 bool checkWin() {
-	if ((spaces[0][0] == 'X' && spaces[0][1] == 'X' && spaces[0][2] == 'X') || (spaces[1][0] == 'X' && spaces[1][1] == 'X' && spaces[1][2] == 'X') || (spaces[2][0] == 'X' && spaces[2][1] == 'X' && spaces[2][2] == 'X') || (spaces[0][0] == 'X' && spaces[1][0] == 'X' && spaces[2][0] == 'X') || (spaces[0][1] == 'X' && spaces[1][1] == 'X' && spaces[2][1] == 'X') || (spaces[0][2] == 'X' && spaces[1][2] == 'X' && spaces[2][2] == 'X') || (spaces[0][0] == 'X' && spaces[1][1] == 'X' && spaces[2][2] == 'X') || (spaces[2][0] == 'X' && spaces[1][1] == 'X' && spaces[0][2] == 'X')) {
+	if ((spaces[0][0] == 'X' && spaces[0][1] == 'X' && spaces[0][2] == 'X') || \
+		(spaces[1][0] == 'X' && spaces[1][1] == 'X' && spaces[1][2] == 'X') || \
+		(spaces[2][0] == 'X' && spaces[2][1] == 'X' && spaces[2][2] == 'X') || \
+		(spaces[0][0] == 'X' && spaces[1][0] == 'X' && spaces[2][0] == 'X') || \
+		(spaces[0][1] == 'X' && spaces[1][1] == 'X' && spaces[2][1] == 'X') || \
+		(spaces[0][2] == 'X' && spaces[1][2] == 'X' && spaces[2][2] == 'X') || \
+		(spaces[0][0] == 'X' && spaces[1][1] == 'X' && spaces[2][2] == 'X') || \
+		(spaces[2][0] == 'X' && spaces[1][1] == 'X' && spaces[0][2] == 'X')) {
 		std::cout << "Player 1 wins!\n";
 		return true;
 	}
-	if ((spaces[0][0] == 'O' && spaces[0][1] == 'O' && spaces[0][2] == 'O') || (spaces[1][0] == 'O' && spaces[1][1] == 'O' && spaces[1][2] == 'O') || (spaces[2][0] == 'O' && spaces[2][1] == 'O' && spaces[2][2] == 'O') || (spaces[0][0] == 'O' && spaces[1][0] == 'O' && spaces[2][0] == 'O') || (spaces[0][1] == 'O' && spaces[1][1] == 'O' && spaces[2][1] == 'O') || (spaces[0][2] == 'O' && spaces[1][2] == 'O' && spaces[2][2] == 'O') || (spaces[0][0] == 'O' && spaces[1][1] == 'O' && spaces[2][2] == 'O') || (spaces[2][0] == 'O' && spaces[1][1] == 'O' && spaces[0][2] == 'O')) {
+	if ((spaces[0][0] == 'O' && spaces[0][1] == 'O' && spaces[0][2] == 'O') || \
+		(spaces[1][0] == 'O' && spaces[1][1] == 'O' && spaces[1][2] == 'O') || \
+		(spaces[2][0] == 'O' && spaces[2][1] == 'O' && spaces[2][2] == 'O') || \
+		(spaces[0][0] == 'O' && spaces[1][0] == 'O' && spaces[2][0] == 'O') || \
+		(spaces[0][1] == 'O' && spaces[1][1] == 'O' && spaces[2][1] == 'O') || \
+		(spaces[0][2] == 'O' && spaces[1][2] == 'O' && spaces[2][2] == 'O') || \
+		(spaces[0][0] == 'O' && spaces[1][1] == 'O' && spaces[2][2] == 'O') || \
+		(spaces[2][0] == 'O' && spaces[1][1] == 'O' && spaces[0][2] == 'O')) {
 		std::cout << "Player 2 wins!\n";
 		return true;
 	}
