@@ -173,8 +173,7 @@ bool checkTie() {
 	if (c == 9) {
 		std::cout << "It's a tie!\n";
 		return true;
-	}
-	else {
+	} else {
 		return false;
 	}
 }
